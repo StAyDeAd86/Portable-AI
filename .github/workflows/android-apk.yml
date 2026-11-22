@@ -1,9 +1,10 @@
+
 name: Build Android APK
 
 on:
   workflow_dispatch:
   push:
-    branches: ["main", "master"]
+    branches: [main, master]
 
 permissions:
   contents: read
@@ -41,3 +42,4 @@ jobs:
         with:
           name: portable-ai-apk
           path: portable_ai_flutter/build/app/outputs/flutter-apk/app-release.apk
+
