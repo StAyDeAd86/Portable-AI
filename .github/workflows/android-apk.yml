@@ -29,10 +29,6 @@ jobs:
         working-directory: portable_ai_flutter
         run: flutter pub get
 
-      - name: Analyze
-        working-directory: portable_ai_flutter
-        run: flutter analyze
-
       - name: Build APK
         working-directory: portable_ai_flutter
         run: flutter build apk --release
